@@ -1,0 +1,77 @@
+﻿@model BookStoreWebApp.Models.BookModel
+
+@{
+    ViewData["Title"] = "DeleteBook";
+}
+
+
+<div class="container">
+    <h3 class="display-4">Delete confirmation for @Model.Title</h3>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <img class="img-fluid" src="@Model.CoverImageURL" alt="@Model.Title">
+        </div>
+
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-10">
+                    <dl class="row">
+
+                        <dt class="col-sm-4">
+                            @Html.DisplayNameFor(model => model.Id)
+                        </dt>
+
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.Id)
+                        </dd>
+                        <dt class="col-sm-4">
+                            @Html.DisplayNameFor(model => model.Title)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.Title)
+
+                        </dd>
+                        <dt class="col-sm-4">
+                            @Html.DisplayNameFor(model => model.Author)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.Author)
+                        </dd>
+                        <dt class="col-sm-4">
+                            @Html.DisplayNameFor(model => model.Description)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.Description)
+                        </dd>
+
+                        <dt class="col-sm-4">
+                            @Html.DisplayNameFor(model => model.Language)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.Language)
+                        </dd>
+                        <dt class="col-sm-4">
+                            @Html.DisplayNameFor(model => model.TotalPages)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.TotalPages)
+                        </dd>
+
+                    </dl>
+                </div>
+            </div>
+            
+            <form asp-action="DeleteBook">
+                <br />
+                <input type="submit" value="Delete" class="btn btn-danger" />
+                <br />
+                <br />
+                <a asp-controller="Home" asp-action="Index">Back to HomePage </a>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

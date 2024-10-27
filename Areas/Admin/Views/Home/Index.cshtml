@@ -1,0 +1,166 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+@{
+    Layout = "_Layout";
+}
+
+<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">BookStore Admin</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <ul class="navbar-nav px-3">
+    </ul>
+</nav>
+
+<div class="container-fluid ">
+    <div class="row">
+        <nav id="sidebarMenu" class="col-md-2 col-lg-2 d-md-block sidebar collapse">
+            <div class="sidebar-sticky pt-md-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/CoreAdmin">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+
+                            Home
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/CoreAdminData/Index/Books">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+
+                            Books
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/CoreAdminData/Index/BookGallery">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+
+                            BookGallery
+                        </a>
+                    </li>
+                    @*<li class="nav-item">
+                            <a class="nav-link" href="/CoreAdminData/Index/UserRoles">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+
+                                UserRoles
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/CoreAdminData/Index/Roles">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+
+                                Roles
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/CoreAdminData/Index/RoleClaims">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+
+                                RoleClaims
+                            </a>
+                        </li>*@
+                    <li class="nav-item">
+                        <a class="nav-link" href="/CoreAdminData/Index/Users">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+
+                            Users
+                        </a>
+                    </li>
+                    @*<li class="nav-item">
+                            <a class="nav-link" href="/CoreAdminData/Index/UserClaims">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+
+                                UserClaims
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/CoreAdminData/Index/UserLogins">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+
+                                UserLogins
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/CoreAdminData/Index/UserTokens">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+
+                                UserTokens
+                            </a>
+                        </li>*@
+                </ul>
+
+            </div>
+        </nav>
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-md-4">
+            <h1 class="display-4">Admin DashBoard</h1>
+
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm" style="width: 23rem;">
+                            <div class="card-body">
+                                <h3 class="card-title"> Books </h3>
+                                <p class="card-text"> Book Details </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a asp-area="Admin" asp-controller="Home" asp-action="Details" class="btn btn-sm btn-outline-secondary">View Details</a>
+                                    </div>
+                                    @*<small class="text-muted"> @(string.IsNullOrEmpty(Model.Author) ? "Didn't think of a name yet!": Model.Author) </small>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm" style="width: 23rem;">
+                            <div class="card-body">
+                                <h3 class="card-title"> Book Gallery </h3>
+                                <p class="card-text"> Book Gallery Details </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a asp-area="Admin" asp-controller="Home" asp-action="Details" class="btn btn-sm btn-outline-secondary">View Details</a>
+                                    </div>
+                                    @*<small class="text-muted"> @(string.IsNullOrEmpty(Model.Author) ? "Didn't think of a name yet!": Model.Author) </small>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm" style="width: 23rem;">
+                            <div class="card-body">
+                                <h3 class="card-title"> User  </h3>
+                                <p class="card-text"> User Details </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-sm btn-outline-secondary" href="/CoreAdminData/Index/Users">Users</a>
+                                        @*<a asp-area="Admin" asp-controller="Home" asp-action="Details" class="btn btn-sm btn-outline-secondary">View Details</a>*@
+                                    </div>
+                                    @*<small class="text-muted"> @(string.IsNullOrEmpty(Model.Author) ? "Didn't think of a name yet!": Model.Author) </small>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="fixed-bottom">
+                            <div class="col-lg-12 my-3">
+                                <a class="btn btn-info" asp-action="Index" asp-controller="Home" asp-area="">Home Page</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</div>
+
+

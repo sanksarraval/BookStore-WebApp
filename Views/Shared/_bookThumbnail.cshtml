@@ -1,0 +1,15 @@
+﻿@model BookModel
+
+<div class="card mb-4 shadow-sm text-center text-white bg-secondary col d-flex justify-content-center"  style="width: 23rem;">
+    <img src="@Model.CoverImageURL"   class="img-fluid rounded mx-auto d-block" />
+    <div class="card-body">
+        <h3 class="card-title"> @(string.IsNullOrEmpty(Model.Title) ? "Didn't think of a name yet!": Model.Title) </h3>
+        <p class="card-text"> @(string.IsNullOrEmpty(Model.Description) ? "Didn't think of a Description yet!": Model.Description) </p>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+                <a asp-route="BookDetailsRoute" asp-route-id="@Model.Id" class="btn btn-sm btn-outline-secondary stretched-link">View Details</a>
+            </div>
+            <small class="text-muted"> @(string.IsNullOrEmpty(Model.Author) ? "Didn't think of a name yet!": Model.Author) </small>
+        </div>
+    </div>
+</div>

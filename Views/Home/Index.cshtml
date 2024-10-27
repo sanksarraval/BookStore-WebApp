@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    //dynamic data = ViewBag.Data;
+    var bookInfo = ViewData["Book"] as BookModel;
+
+}
+
+<section class="jumbotron text-center text-white bg-dark">
+    <div class="container">
+        <h1 class="display-4">Welcome to Bookstore</h1>
+        <p class="lead text-muted">
+            @*Example of ViewBag()*@
+            @*Id = @ViewBag.Type.Id  Author = @ViewBag.Type.Author   @data.Id @data.Name*@
+            @*Example of ViewData()*@
+            @*@ViewData["prop1"]
+                ***Id: @bookInfo.Id, Author: @bookInfo.Author****@
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non commodo risus.
+            Cras hendrerit semper nisi, mattis laoreet lectus viverra ac. Proin mollis euismod tortor, ut ultrices felis lobortis et.
+            Phasellus vel arcu tristique, facilisis nulla ut, vehicula nisi. Aliquam id interdum justo, nec fermentum justo.
+            Sed blandit porttitor augue, eu vestibulum metus venenatis ac. Nullam pellentesque non elit non commodo.
+            Vestibulum tempus magna vel ipsum elementum, nec lacinia elit sollicitudin. Etiam porttitor quam quis tellus convallis efficitur.
+            Curabitur enim libero, rhoncus ac interdum eget, eleifend nec nunc. Suspendisse potenti. Duis ex urna, auctor vel nisl non, posuere dapibus libero.
+            Sed tincidunt purus quis nisi eleifend suscipit.
+
+        </p>
+    </div>
+</section>
+
+<div class="py-5 text-center text-white bg-dark" id="topBooks">
+    <div class="container">
+        <h2 class="h2">Top books</h2>
+        @*<vc:top-books></vc:top-books>*@
+
+        @await Component.InvokeAsync("TopBooks", new { count = 6 })
+
+    </div>
+</div>
+
+
+@*@await Component.InvokeAsync("TopBooks", new { count = 3 })*@
+
+@*<vc:top-books count="6" ></vc:top-books>*@
+
+

@@ -1,0 +1,61 @@
+﻿<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                @* Image tag helper provides cache-busting behaviour for static image *@
+
+                <img src="~/images/GovOfManitoba.jpg" width="30" height="30" asp-append-version="true" />
+                Book Store
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <ul class="navbar-nav navbar-right">
+                    <partial name="_LoginInfo" />
+                </ul>
+                <form class=" form-inline navbar-form navbar-right">
+                    <div class="input-group">
+                        <input type="text" class="form-control mr-sm-2" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-dark" type="submit">
+                                <i class="fa-solid fa-magnifying-glass fa-beat"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav  flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Book" asp-action="GetAllBooks">All Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Book" asp-action="AddNewBook">Add new book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="Home" asp-action="Index">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href='http://mbgapp3514d/ReportS_GoM_DEV/browse/Justice/Fine%20Cards' target="_blank">Reports</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            @*<div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav">
+                        <partial name="_LoginInfo" />
+                    </ul>
+                </div>*@
+        </div>
+
+    </nav>
+</header>
