@@ -20,6 +20,7 @@ This Bookstore Web Application is a comprehensive solution for managing an onlin
 - **Role-Based Access Control (RBAC)**: Admins and customers have different access levels; only admins can manage inventory, view sales reports, and update book details.
 ![GIF](https://github.com/sanksarraval/BookStore-WebApp/blob/main/wwwroot/images/RBAC.gif)
 - **Book Inventory Management**: Admins can add, update, and delete books, with CRUD functionality for managing book details and categories.
+![GIF](https://github.com/sanksarraval/BookStore-WebApp/blob/main/wwwroot/images/BookInventoryManagement.gif)
 - **Search and Filter**: Users can search and filter books by categories, authors, or price.
 - **Responsive Design**: Ensures accessibility across devices with a mobile-friendly user interface.
 
