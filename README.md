@@ -23,6 +23,7 @@ This Bookstore Web Application is a comprehensive solution for managing an onlin
 ![GIF](https://github.com/sanksarraval/BookStore-WebApp/blob/main/wwwroot/images/BookInventoryManagement.gif)
 - **Search and Filter**: Users can search and filter books by categories, authors, or price.
 - **Responsive Design**: Ensures accessibility across devices with a mobile-friendly user interface.
+![GIF](https://github.com/sanksarraval/BookStore-WebApp/blob/main/wwwroot/images/ResponsiveDesign.gif)
 
 ## Tech Stack
 
