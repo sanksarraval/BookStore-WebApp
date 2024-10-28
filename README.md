@@ -16,6 +16,7 @@ This Bookstore Web Application is a comprehensive solution for managing an onlin
 ## Features
 
 - **User Registration and Authentication**: Allows users to create accounts, log in, and manage their profiles securely.
+- ![GIF](https://github.com/sanksarraval/BookStore-WebApp/blob/main/wwwroot/images/User_Registration%26Authentication.gif)
 - **Role-Based Access Control (RBAC)**: Admins and customers have different access levels; only admins can manage inventory, view sales reports, and update book details.
 - **Book Inventory Management**: Admins can add, update, and delete books, with CRUD functionality for managing book details and categories.
 - **Search and Filter**: Users can search and filter books by categories, authors, or price.
