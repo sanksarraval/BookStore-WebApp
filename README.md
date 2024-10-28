@@ -77,9 +77,6 @@ This Bookstore Web Application is a comprehensive solution for managing an onlin
     - Register or log in as a customer to browse books, add items to your cart, and check out with secure payment processing.
     - Use the search bar or filters to navigate through different book categories and authors.
 
-3. **Order Management**:
-    - Track order status and view purchase history from the user dashboard.
-
 ## Database Structure
 
 The **BookstoreDB** database contains the following primary tables:
@@ -87,8 +84,7 @@ The **BookstoreDB** database contains the following primary tables:
 - **Users**: Stores user information and roles (Admin or Customer).
 - **Books**: Holds book details, including title, author, price, and stock quantity.
 - **Categories**: Defines categories for books to enable filtering.
-- **Orders**: Logs each user’s orders with purchase and status details.
-- **OrderItems**: Contains information about each item in an order, allowing multi-book purchases.
+
 
 ## Project Structure
 BookstoreWebApp/ │ ├── Controllers/ # Handles request routing and business logic ├── Models/ # Defines the structure of data and database interactions ├── Views/ # Contains Razor views for UI components ├── wwwroot/ # Holds static files (CSS, JS, images) ├── appsettings.json # Application configuration file └── Program.cs # Main entry point for the application
